@@ -8,3 +8,11 @@
 | Pressure Sensor (e.g. FSR 402)             | $7.95           | [Link](https://www.adafruit.com/product/166)                         |
 | Adafruit I2S MEMS Microphone + Speaker     | $14.95          | [Link](https://www.adafruit.com/product/3369)                        |
 | Adafruit NeoPixel Stick (Warm White) × 2   | $7.95 each      | [Link](https://www.adafruit.com/product/2867)                        |
+
+
+
+### Circuit Diagram
+
+![Circuit Diagram](circuit-diagram.png)
+
+This diagram shows the connection of the Raspberry Pi 4, Crickit HAT, light sensor (TSL2591), pressure sensor (FSR), microphone/speaker combo, and NeoPixel stick.

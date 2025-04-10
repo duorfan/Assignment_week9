@@ -16,3 +16,16 @@
 ![Circuit Diagram](circuit-diagram.png)
 
 This diagram shows the connection of the Raspberry Pi 4, Crickit HAT, light sensor (TSL2591), pressure sensor (FSR), microphone/speaker combo, and NeoPixel stick.
+
+
+### Stepper Motor Hello World Extension
+
+This project extends the original `run_stepper.py` motor control code from class by allowing the stepper motor to be triggered remotely via an HTTP POST request.
+
+A Flask server runs on the Raspberry Pi and listens on `/trigger`. When a request with `{ "move": true }` is received, the motor moves forward and backward by 50 steps each.
+
+This simulates responding to a real-time event such as a web hook or button press from another device or service.
+
+**Example Request:**
+```bash
+curl -X POST http://<pi-ip>:5000/trigger -H "Content-Type: application/json" -d '{"move": true}'
